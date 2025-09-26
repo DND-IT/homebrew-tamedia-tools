@@ -14,10 +14,11 @@ class TamediaTools < Formula
   def install
     # Install all tools
     bin.install "tools/tunnel/tunnel.sh" => "tamedia-tunnel"
-    
+    bin.install "tools/aws-cli/aws-eks-config.sh" => "tamedia-aws-eks-config"
+
     # Install shared utilities
     bin.install "scripts/common.sh" => "tamedia-common"
-    
+
     # Install completion scripts
     bash_completion.install "completion/tamedia-tunnel.bash" => "tamedia-tunnel"
     zsh_completion.install "completion/_tamedia-tunnel"
@@ -26,15 +27,25 @@ class TamediaTools < Formula
   def caveats
     <<~EOS
       Tamedia Tools have been installed with the following commands:
-        tamedia-tunnel    - Tunnel to AWS services through Kubernetes
-      
+        tamedia-tunnel           - Tunnel to AWS services through Kubernetes
+        tamedia-aws-eks-config   - Interactive EKS cluster configuration
+
+      Setup AWS CLI aliases (recommended):
+        tamedia-aws-eks-config --setup-aliases
+
+      Then use AWS CLI aliases anywhere:
+        aws eks-config           # Interactive cluster selection
+        aws eks-list            # List clusters with status
+        aws eks-describe CLUSTER # Detailed cluster info
+
       Run any command with --help for usage information.
-      
+
       Documentation: https://github.com/dnd-it/tamedia-tools
     EOS
   end
   
   test do
     system "#{bin}/tamedia-tunnel", "--version"
+    system "#{bin}/tamedia-aws-eks-config", "--version"
   end
 end
