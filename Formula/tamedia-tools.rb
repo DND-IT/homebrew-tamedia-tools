@@ -1,10 +1,10 @@
 class TamediaTools < Formula
   desc "Complete suite of AWS and Kubernetes productivity tools - Tamedia Edition"
   homepage "https://github.com/dnd-it/tamedia-tools"
-  url "https://github.com/DND-IT/tamedia-tools/archive/v1.2.0.tar.gz"
-  sha256 "934762e43fc0b7e9b8d629ea67cfb9065fbb6ea372604f275835f2bcf5bc266f"
+  url "https://github.com/DND-IT/tamedia-tools/archive/v1.2.1.tar.gz"
+  sha256 "a41089da1f6a6f3a1a8acbb2e8579ef24b1aedeb57db0f2bee9475c96ba30622"
   license "MIT"
-  version "1.2.0"
+  version "1.2.1"
   
   depends_on "awscli"
   depends_on "jq"
