@@ -1,10 +1,10 @@
 class TamediaTunnel < Formula
   desc "AWS service tunneling tool for Kubernetes - Tamedia Edition"
   homepage "https://github.com/dnd-it/tamedia-tools"
-  url "https://github.com/dnd-it/tamedia-tools/archive/v1.0.0.tar.gz"
-  sha256 "35b8c16cba70717f6770627d408a9504ef0f4ab5649cd4daf8ad1679b380be73"
+  url "https://github.com/DND-IT/tamedia-tools/archive/v1.2.0.tar.gz"
+  sha256 "934762e43fc0b7e9b8d629ea67cfb9065fbb6ea372604f275835f2bcf5bc266f"
   license "MIT"
-  version "1.0.0"
+  version "1.2.0"
   
   depends_on "awscli"
   depends_on "jq"
