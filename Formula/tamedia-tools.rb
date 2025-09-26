@@ -14,7 +14,7 @@ class TamediaTools < Formula
   def install
     # Install all tools
     bin.install "tools/tunnel/tunnel.sh" => "tamedia-tunnel"
-    bin.install "tools/aws-cli/aws-eks-config.sh" => "tamedia-aws-eks-config"
+    bin.install "tools/aws-cli/aws-cli-helpers.sh" => "tamedia-aws-cli-helpers"
 
     # Install shared utilities
     bin.install "scripts/common.sh" => "tamedia-common"
@@ -28,10 +28,10 @@ class TamediaTools < Formula
     <<~EOS
       Tamedia Tools have been installed with the following commands:
         tamedia-tunnel           - Tunnel to AWS services through Kubernetes
-        tamedia-aws-eks-config   - Interactive EKS cluster configuration
+        tamedia-aws-cli-helpers  - Interactive AWS CLI helper tools
 
       Setup AWS CLI aliases (recommended):
-        tamedia-aws-eks-config --setup-aliases
+        tamedia-aws-cli-helpers --setup-aliases
 
       Then use AWS CLI aliases anywhere:
         aws eks-config           # Interactive cluster selection
@@ -46,6 +46,6 @@ class TamediaTools < Formula
   
   test do
     system "#{bin}/tamedia-tunnel", "--version"
-    system "#{bin}/tamedia-aws-eks-config", "--version"
+    system "#{bin}/tamedia-aws-cli-helpers", "--version"
   end
 end
