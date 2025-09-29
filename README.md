@@ -1,4 +1,4 @@
-# Homebrew Tamedia Tools
+# Homebrew Tap
 
 Official Homebrew tap for [tamedia-tools](https://github.com/dnd-it/tamedia-tools) - AWS service tunneling tools for Kubernetes.
 
@@ -6,7 +6,7 @@ Official Homebrew tap for [tamedia-tools](https://github.com/dnd-it/tamedia-tool
 
 ```bash
 # Add the tap
-brew tap dnd-it/tamedia-tools
+brew tap dnd-it/tap
 
 # Install the complete suite
 brew install tamedia-tools
