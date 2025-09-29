@@ -1,6 +1,9 @@
 # Homebrew Tap
 
-Official Homebrew tap for [tamedia-tools](https://github.com/dnd-it/tamedia-tools) - AWS service tunneling tools for Kubernetes.
+Homebrew tap for Tamedia
+
+## Formulas
+
 
 ## Installation
 
@@ -27,23 +30,12 @@ brew install tamedia-aws-cli-helpers
 
 ## Available Formulas
 
-- **tamedia-tools** - Complete suite of AWS and Kubernetes productivity tools
-- **tamedia-tunnel** - AWS service tunneling tool for Kubernetes
+- [tamedia-tools](https://github.com/dnd-it/tamedia-tools) - Collection of tools used in Tamedia technology.
+
 
 ## Requirements
 
 - macOS or Linux
-- Homebrew
-- AWS CLI
-- kubectl
-- jq
+- [Homebrew](https://brew.sh/)
 
-## Documentation
 
-For usage instructions and documentation, see the main repository:
-https://github.com/dnd-it/tamedia-tools
-
-## Issues
-
-Please report issues in the main repository:
-https://github.com/dnd-it/tamedia-tools/issues
