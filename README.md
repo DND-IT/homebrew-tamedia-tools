@@ -4,15 +4,25 @@ Official Homebrew tap for [tamedia-tools](https://github.com/dnd-it/tamedia-tool
 
 ## Installation
 
+### Direct installation (recommended)
 ```bash
-# Add the tap
-brew tap dnd-it/tap
-
-# Install the complete suite
-brew install tamedia-tools
+# Install the complete suite directly
+brew install dnd-it/tap/tamedia-tools
 
 # Or install individual tools
+brew install dnd-it/tap/tamedia-tunnel
+brew install dnd-it/tap/tamedia-aws-cli-helpers
+```
+
+### Via tap
+```bash
+# Add the tap first
+brew tap dnd-it/tap
+
+# Then install using short names
+brew install tamedia-tools
 brew install tamedia-tunnel
+brew install tamedia-aws-cli-helpers
 ```
 
 ## Available Formulas
